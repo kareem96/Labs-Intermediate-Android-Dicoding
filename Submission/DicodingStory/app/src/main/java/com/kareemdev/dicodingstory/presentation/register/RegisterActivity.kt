@@ -2,16 +2,25 @@ package com.kareemdev.dicodingstory.presentation.register
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.ContentValues
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.controls.ControlsProviderService
+import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.kareemdev.dicodingstory.R
+import com.kareemdev.dicodingstory.data.model.RegisterResponse
+import com.kareemdev.dicodingstory.data.remote.ApiConfig
 import com.kareemdev.dicodingstory.databinding.ActivityMainBinding
 import com.kareemdev.dicodingstory.databinding.ActivityRegisterBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -55,7 +64,49 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun register() {
         // method register
+        onLoading(true)
+        val client = ApiConfig.getApiService().register(
+            binding.myEtName.text.toString(),
+            binding.myEtEmail.text.toString(),
+            binding.myEtPassword.text.toString()
+        )
+        client.enqueue(object: Callback<RegisterResponse>{
+            override fun onResponse(
+                call: Call<RegisterResponse>,
+                response: Response<RegisterResponse>
+            ) {
+                val responseBody = response.body()
+                if(response.isSuccessful && responseBody != null){
+                    if(responseBody.error == true){
+                        Toast.makeText(this@RegisterActivity, "", Toast.LENGTH_SHORT).show()
+                    }else{
+                        onLoading(false)
+                        AlertDialog.Builder(this@RegisterActivity).apply {
+                            setTitle("")
+                            setMessage(responseBody.message)
+                            setPositiveButton("Ok"){_,_, ->
+                                finish()
+                            }
+                            create()
+                            show()
+                        }
+                    }
+                }else{
+                    onLoading(false)
+                    Log.e(ContentValues.TAG, "onResponse: ${response.message()}", )
+                }
+            }
 
+            override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
+                Log.e(ControlsProviderService.TAG, "onFailure: ${t.message}", )
+            }
+
+        })
+
+    }
+
+    private fun onLoading(data: Boolean) {
+        binding.progressBar.visibility = if(data) View.VISIBLE else View.INVISIBLE
     }
 
     private fun showToast(message: String) {
