@@ -12,6 +12,7 @@
         android:id="@+id/title_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         android:text="LOGIN"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,9 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="10dp"
         android:id="@+id/input_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundMode="none"
         app:errorEnabled="true"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,14 +41,20 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_password"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        app:boxBackgroundMode="none"
+        app:errorEnabled="true"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_email">
 
         <com.kareemdev.dicodingstory.components.PasswordTextField
             android:layout_width="match_parent"
+            android:id="@+id/edt_password"
             android:layout_height="60dp"
             android:layout_marginVertical="10dp"
             android:textColorHint="@color/gray" />
@@ -52,6 +62,8 @@
 
     <com.kareemdev.dicodingstory.components.PrimaryButton
         android:id="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="1dp"
