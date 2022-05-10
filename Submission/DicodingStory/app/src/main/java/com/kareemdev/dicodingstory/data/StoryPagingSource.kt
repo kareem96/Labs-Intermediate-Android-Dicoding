@@ -2,7 +2,7 @@ package com.kareemdev.dicodingstory.data
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.kareemdev.dicodingstory.data.model.ListStoryItem
+import com.kareemdev.dicodingstory.domain.model.ListStoryItem
 import com.kareemdev.dicodingstory.data.remote.ApiService
 import com.kareemdev.dicodingstory.utils.Constants.INITIAL_PAGE_INDEX
 import com.kareemdev.dicodingstory.utils.Constants.token

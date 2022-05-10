@@ -1,9 +1,8 @@
 package com.kareemdev.dicodingstory.data.remote
 
-import com.kareemdev.dicodingstory.data.model.AddStoryResponse
-import com.kareemdev.dicodingstory.data.model.LoginResponse
-import com.kareemdev.dicodingstory.data.model.RegisterResponse
-import com.kareemdev.dicodingstory.data.model.StoriesResponse
+import com.kareemdev.dicodingstory.data.LoginRequest
+import com.kareemdev.dicodingstory.data.RegisterRequest
+import com.kareemdev.dicodingstory.data.model.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -14,36 +13,36 @@ interface ApiService {
     @FormUrlEncoded
     @POST("register")
     fun register(
-        @Field("name") name: String,
+        @Body body: RegisterRequest,
+        /*@Field("name") name: String,
         @Field("email") email: String,
-        @Field("password") password: String,
+        @Field("password") password: String,*/
     ): Call<RegisterResponse>
 
     @FormUrlEncoded
     @POST("login")
     fun login(
-        @Field("email") email: String,
-        @Field("password") password: String,
-    ): Call<LoginResponse>
+        @Body body: LoginRequest,
+        /*@Field("email") email: String,
+        @Field("password") password: String,*/
+    ): Call<BaseResponse>
 
     @GET("stories")
     fun getListStories(
-        @Header("Authorization") authToken: String,
-        @Query("Location") page: Int? = 0,
-        @Query("Location") size: Int? = 10,
-    ): StoriesResponse
+        @Query("location") location: String?,
+        @Query("page") page: Int?,
+        @Query("size") size: Int?,
+    ): BaseResponse
 
     @GET("stories")
-    fun getStoriesLoc(
-        @Header("Authorization") authToken: String,
-        @Query("Location") location: Int = 1,
-    ): Call<StoriesResponse>
+    fun getStories(
+        @Query("location") location: String?
+    ): Call<BaseResponse>
 
     @Multipart
     @POST("stories")
-    fun addStory(
-        @Part photo: MultipartBody.Part,
+    fun postStory(
         @Part("description") description: RequestBody,
-        @Header("Authorization") authToken: String,
-    ): Call<AddStoryResponse>
+        @Part file: MultipartBody.Part,
+    ): Call<BaseResponse>
 }

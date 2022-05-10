@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="required_input">asd</string>
+    <string name="user_created_at">%1$s</string>
 </resources>

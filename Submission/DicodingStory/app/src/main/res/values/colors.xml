@@ -9,10 +9,19 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="yellow_700">#ffea00</color>
-    <color name="black_500">#161616</color>
-    <color name="black_200">#212121</color>
-    <color name="sky_blue_700">#75C1EB</color>
-    <color name="sky_blue_500">#9BCFEC</color>
-    <color name="red">#FF0000</color>
+    <color name="pink">#FFe94560</color>
+    <color name="pink_light">#FFe97171</color>
+    <color name="pink_ultra_light">#FFfc7cc7</color>
+    <color name="gray">#FF888888</color>
+    <color name="gray_dark">#FF1a1a2e</color>
+    <color name="gray_dark_second">#FF1A2130</color>
+    <color name="gray_light">#FF2B364F</color>
+    <color name="magenta">#FF59405c</color>
+    <color name="magenta_dark">#FF3c2c3e</color>
+    <color name="skin_color">#FFfbe2e5</color>
+    <color name="cream">#ffefe7d6</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
 </resources>
