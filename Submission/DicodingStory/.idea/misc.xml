@@ -8,18 +8,22 @@
         <entry key="app/src/main/res/drawable/bg_button_disabled.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_text_field.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/item_loading.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rounded_outline.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.30052083333333335" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.12" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.19649122807017544" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.31302083333333336" />
-        <entry key="app/src/main/res/layout/fragment_home_story.xml" value="0.30052083333333335" />
+        <entry key="app/src/main/res/layout/fragment_add_story.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home_story.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1574074074074074" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.1574074074074074" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.30052083333333335" />
         <entry key="app/src/main/res/layout/item_loading.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/item_story.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/item_story.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.30052083333333335" />
       </map>
     </option>
   </component>

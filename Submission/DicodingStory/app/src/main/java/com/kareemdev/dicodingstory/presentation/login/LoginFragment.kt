@@ -48,7 +48,11 @@ class LoginFragment : Fragment(), View.OnClickListener {
                 }
                 is StateHandler.Success -> {
                     hideLoading()
-
+                    CommonFunction.showSnackBar(
+                        binding.root,
+                        requireContext(),
+                        getString(R.string.login_sucess),
+                    )
                     it.data?.loginResult?.token?.let { token ->
                         sessionViewModel.saveToken(token)
                     }

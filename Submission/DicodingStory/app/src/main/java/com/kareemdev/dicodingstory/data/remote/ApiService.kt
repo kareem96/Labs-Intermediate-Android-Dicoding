@@ -26,7 +26,7 @@ interface ApiService {
     ): Call<BaseResponse>
 
     @GET("stories")
-    fun getListStories(
+    suspend fun getListStories(
         @Query("location") location: String?,
         @Query("page") page: Int?,
         @Query("size") size: Int?,

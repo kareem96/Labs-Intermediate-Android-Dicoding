@@ -11,10 +11,18 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment2_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment2"
+            app:popUpToInclusive="true"
+            />
         <action
             android:id="@+id/action_splashFragment2_to_homeStoryFragment"
-            app:destination="@id/homeStoryFragment" />
+            app:destination="@id/homeStoryFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment2"
+            app:popUpToInclusive="true"
+            />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -24,6 +32,13 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeStoryFragment"
+            app:destination="@id/homeStoryFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -37,6 +52,37 @@
         tools:layout="@layout/fragment_home_story" >
         <action
             android:id="@+id/action_homeStoryFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeStoryFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_homeStoryFragment_to_addStoryFragment"
+            app:destination="@id/addStoryFragment" />
+        <action
+            android:id="@+id/action_homeStoryFragment_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
     </fragment>
+    <fragment
+        android:id="@+id/addStoryFragment"
+        android:name="com.kareemdev.dicodingstory.presentation.home.AddStoryFragment"
+        android:label="fragment_add_story"
+        tools:layout="@layout/fragment_add_story" >
+        <action
+            android:id="@+id/action_addStoryFragment_to_homeStoryFragment"
+            app:destination="@id/homeStoryFragment" />
+        <action
+            android:id="@+id/action_addStoryFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/addStoryFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.kareemdev.dicodingstory.presentation.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

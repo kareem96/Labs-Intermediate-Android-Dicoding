@@ -9,6 +9,7 @@ import com.kareemdev.dicodingstory.data.local.database.StoryDatabase
 import com.kareemdev.dicodingstory.data.model.BaseResponse
 import com.kareemdev.dicodingstory.domain.model.ListStoryItem
 import com.kareemdev.dicodingstory.domain.repository.Repository
+import java.io.File
 
 abstract class StoryViewModel(
     val database: StoryDatabase,
@@ -24,7 +25,10 @@ abstract class StoryViewModel(
     protected val storyViewLast = MutableLiveData<String>()
     val storyViewLastState: LiveData<String> = storyViewLast
 
-    abstract  fun getStories(location:String?)
+    abstract fun getStories(location:String?)
     abstract fun getListStories(): LiveData<PagingData<ListStoryItem>>
+    abstract fun postStory(description:String, photo:File,)
+    abstract fun resetPostStory()
+    abstract fun updateStory(): Boolean
 
 }
