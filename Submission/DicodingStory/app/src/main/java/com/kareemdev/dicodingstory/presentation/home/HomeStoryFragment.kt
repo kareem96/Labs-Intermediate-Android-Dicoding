@@ -41,29 +41,20 @@ class HomeStoryFragment : Fragment(), ItemClick{
 
     }
 
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding.rv.layoutManager = LinearLayoutManager(requireContext())
-        storyViewAdapter = StoryAdapter(this)
         storyPagingAdapter = StoryPagingAdapter(this)
         binding.swipe.setOnRefreshListener {
-            getDataPaging(storyPagingAdapter)
+            getDataWithPaging(storyPagingAdapter)
         }
         binding.fab.setOnClickListener {
             findNavController().navigate(R.id.action_homeStoryFragment_to_addStoryFragment)
         }
 
-        getDataPaging(storyPagingAdapter)
-
+        getDataWithPaging(storyPagingAdapter)
+        storyViewModel.getStories("1")
+        /*getData()*/
         return binding.root
-    }
-
-    private fun getDataPaging(storyPagingAdapter: StoryPagingAdapter) {
-        binding.rv.adapter = storyPagingAdapter.withLoadStateFooter(LoadingStateAdapter(retry = { storyPagingAdapter.retry()}))
-        storyViewModel.getListStories().observe(viewLifecycleOwner){
-            storyPagingAdapter.submitData(lifecycle, it)
-        }
     }
 
     private fun getData() {
@@ -80,11 +71,10 @@ class HomeStoryFragment : Fragment(), ItemClick{
                         if (storyViewModel.updateStory()) {
                             binding.rv.smoothScrollToPosition(0)
                         }
-                        val adapter = StoryAdapter(this)
+                        /*val adapter = StoryListViewAdapter(this)
                         adapter.setData(ArrayList(stories))
-                        storyViewAdapter = adapter
-                        binding.rv.adapter = storyViewAdapter
-
+                        storyListViewAdapter = adapter
+                        binding.rv.adapter = storyListViewAdapter*/
 
                     }
                 }
@@ -100,10 +90,15 @@ class HomeStoryFragment : Fragment(), ItemClick{
         }
     }
 
-    override fun onStop() {
-        super.onStop()
-        storyViewModel.getStories("1")
+
+    private fun getDataWithPaging(adapter: StoryPagingAdapter) {
+        binding.rv.adapter =
+            adapter.withLoadStateFooter(LoadingStateAdapter(retry = { adapter.retry() }))
+        storyViewModel.getListStories().observe(viewLifecycleOwner) {
+            adapter.submitData(lifecycle, it)
+        }
     }
+
     override fun onClick(binding: ItemStoryBinding, story: ListStoryItem) {
         val bundle = bundleOf(DetailFragment.DATA to story)
         val extras = FragmentNavigatorExtras(

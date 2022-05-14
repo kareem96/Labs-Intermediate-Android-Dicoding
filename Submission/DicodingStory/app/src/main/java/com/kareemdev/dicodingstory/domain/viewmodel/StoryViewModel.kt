@@ -1,5 +1,6 @@
 package com.kareemdev.dicodingstory.domain.viewmodel
 
+import android.location.Location
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -27,7 +28,7 @@ abstract class StoryViewModel(
 
     abstract fun getStories(location:String?)
     abstract fun getListStories(): LiveData<PagingData<ListStoryItem>>
-    abstract fun postStory(description:String, photo:File,)
+    abstract fun postStory(description:String, location: Location?, photo:File, )
     abstract fun resetPostStory()
     abstract fun updateStory(): Boolean
 

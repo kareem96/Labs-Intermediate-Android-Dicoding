@@ -62,32 +62,48 @@ class StoryViewModelImpl(
         ).liveData
     }
 
-    override fun postStory(description: String, photo: File,) {
+    override fun postStory(description: String, location: Location?, photo: File) {
         storyPostEvent.postValue(StateHandler.Loading())
-        val descriptionReqBody = description.toRequestBody("text/plain".toMediaType())
+        val latRequestBody = location?.latitude?.toString()?.toRequestBody("text/plain".toMediaType())
+        val lonRequestBody = location?.longitude?.toString()?.toRequestBody("text/plain".toMediaType())
+        val descriptionRequestBody = description.toRequestBody("text/plain".toMediaType())
+
         val requestImageFile = photo.asRequestBody("image/jpeg".toMediaTypeOrNull())
-        val imageMultiPart: MultipartBody.Part = MultipartBody.Part.createFormData("photo", photo.name, requestImageFile)
+        val imageMultipart: MultipartBody.Part =
+            MultipartBody.Part.createFormData("photo", photo.name, requestImageFile)
 
         storyRepository.postStory(
-            description = descriptionReqBody,
-            file = imageMultiPart).enqueue(object: Callback<BaseResponse>{
-            override fun onResponse(call: Call<BaseResponse>, response: Response<BaseResponse>) {
-                if(response.isSuccessful){
-                    storyPostEvent.postValue(StateHandler.Success(response.body()))
-                }else{
+            description = descriptionRequestBody,
+            file = imageMultipart,
+            lat = latRequestBody,
+            lon = lonRequestBody,
+        )
+            .enqueue(object : Callback<BaseResponse> {
+                override fun onResponse(
+                    call: Call<BaseResponse>,
+                    response: Response<BaseResponse>
+                ) {
+                    if (response.isSuccessful) {
+                        storyPostEvent.postValue(StateHandler.Success(response.body()))
+
+                    } else {
+                        storyPostEvent.postValue(
+                            StateHandler.Error(
+                                ErrorParser.parse(response).message ?: "unknown error"
+                            )
+                        )
+                    }
+                }
+
+                override fun onFailure(call: Call<BaseResponse>, t: Throwable) {
                     storyPostEvent.postValue(
-                        StateHandler.Error(ErrorParser.parse(response).message ?: "Unknown error")
+                        StateHandler.Error(
+                            t.message ?: "unknown error"
+                        )
                     )
                 }
-            }
 
-            override fun onFailure(call: Call<BaseResponse>, t: Throwable) {
-                storyPostEvent.postValue(
-                    StateHandler.Error(t.message ?: "Unknown error")
-                )
-            }
-
-        })
+            })
     }
 
     override fun resetPostStory() {

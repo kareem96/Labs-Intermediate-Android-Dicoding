@@ -1,5 +1,6 @@
 package com.kareemdev.dicodingstory.presentation.home
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.Intent.ACTION_GET_CONTENT
@@ -71,8 +72,9 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
                         requireContext(),
                         "Berhasil Upload",
                     )
-                    storyViewModel.getStories("1")
                     findNavController().popBackStack()
+                    /*storyViewModel.getStories("1")*/
+                    getLocation()
                     storyViewModel.resetPostStory()
                 }
                 is StateHandler.Error -> {
@@ -134,10 +136,24 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
         }
     }
 
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()){
+        isGranted: Boolean ->
+        if(isGranted){
+            getLocation()
+        }
+    }
+
+    private fun getLocation(){
+        if(!CommonFunction.allPermissionsGranted(requireContext())){
+            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
+        }else{
+            println("Permission Denied")
+        }
+    }
+
     private lateinit var photoURI: Uri
     private lateinit var currentPhotoPath: String
-    private val launcherIntentCamera =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+    private val launcherIntentCamera = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             if (it.resultCode == Activity.RESULT_OK) {
                 photo = File(currentPhotoPath)
                 photo?.let { photo ->
@@ -160,8 +176,7 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
             }
         }
 
-    private val launcherIntentGallery =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+    private val launcherIntentGallery = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val selectedImg: Uri = result.data?.data as Uri
                 binding.storyImageView.setImageURI(selectedImg)
@@ -198,6 +213,7 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
                     }
                     storyViewModel.postStory(
                         binding.etDescription.text.toString(),
+                        myLocation,
                         reduced,
                     )
                 }

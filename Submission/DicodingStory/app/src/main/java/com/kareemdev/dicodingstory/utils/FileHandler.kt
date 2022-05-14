@@ -16,28 +16,31 @@ val timeStamp: String = SimpleDateFormat(
     Locale.US
 ).format(System.currentTimeMillis())
 
-fun createCustomTempFile(context: Context): File{
+fun createCustomTempFile(context: Context): File {
     val storageDir: File? = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-    return  File.createTempFile(timeStamp, ".jpg", storageDir)
+    return File.createTempFile(timeStamp, ".jpg", storageDir)
 }
 
-fun reduceFileImage(file: File): File{
+fun reduceFileImage(file: File): File {
     val bitmap = BitmapFactory.decodeFile(file.path)
+
     var compressQuality = 100
     var streamLength: Int
+
     do {
         val bmpStream = ByteArrayOutputStream()
         bitmap.compress(Bitmap.CompressFormat.JPEG, compressQuality, bmpStream)
         val bmpPicByteArray = bmpStream.toByteArray()
         streamLength = bmpPicByteArray.size
         compressQuality -= 5
-    }while (streamLength > 1000000)
+    } while (streamLength > 1000000)
 
     bitmap.compress(Bitmap.CompressFormat.JPEG, compressQuality, FileOutputStream(file))
-    return  file
+
+    return file
 }
 
-fun uriToFile(selectedImg: Uri, context: Context): File{
+fun uriToFile(selectedImg: Uri, context: Context): File {
     val contentResolver: ContentResolver = context.contentResolver
     val myFile = createCustomTempFile(context)
 
@@ -45,9 +48,9 @@ fun uriToFile(selectedImg: Uri, context: Context): File{
     val outputStream: OutputStream = FileOutputStream(myFile)
     val buf = ByteArray(1024)
     var len: Int
-    while (inputStream.read(buf).also { len = it } > 0)
-        outputStream.write(buf, 0, len)
+    while (inputStream.read(buf).also { len = it } > 0) outputStream.write(buf, 0, len)
     outputStream.close()
     inputStream.close()
+
     return myFile
 }
