@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LatihanAdvancedTesting</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="something_error">Something error</string>
+    <string name="no_data">Empty data</string>
+    <string name="published_date">Published Date</string>
+    <string name="save_bookmark">Save Bookmark?</string>
+    <string name="home">Home</string>
+</resources>
