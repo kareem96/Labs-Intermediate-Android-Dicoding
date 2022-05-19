@@ -8,7 +8,7 @@ import com.kareemdev.latihanadvancedtesting.data.local.entity.NewsEntity
 import com.kareemdev.latihanadvancedtesting.data.local.room.NewsDao
 import com.kareemdev.latihanadvancedtesting.data.remote.retrofit.ApiService
 
-class NewsRepository private constructor(
+class NewsRepository constructor(
     private val apiService: ApiService,
     private val newsDao: NewsDao,
 ){
