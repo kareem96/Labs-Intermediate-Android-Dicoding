@@ -54,4 +54,6 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
 
+    implementation 'androidx.paging:paging-runtime:2.1.2'
+
 }

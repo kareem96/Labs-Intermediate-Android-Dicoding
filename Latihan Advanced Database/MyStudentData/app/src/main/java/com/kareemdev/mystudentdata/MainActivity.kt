@@ -51,14 +51,17 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_one_to_many -> {
                 getUniversityAndStudent()
+                /*showSortingOptionMenu(false)*/
                 true
             }
             R.id.action_many_to_many -> {
                 getStudentWithCourse()
+                /*showSortingOptionMenu(false)*/
                 true
             }
             R.id.action_sort -> {
                 showSortingPopupMenu()
+                /*showSortingOptionMenu(false)*/
                 true
             }
             else -> super.onOptionsItemSelected(item)

@@ -2,13 +2,14 @@ package com.kareemdev.mystudentdata.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.kareemdev.mystudentdata.database.Student
 import com.kareemdev.mystudentdata.databinding.ItemStudentBinding
 
-class StudentListAdapter : ListAdapter<Student, StudentListAdapter.WordViewHolder>(WordsComparator()){
+class StudentListAdapter : PagedListAdapter<Student, StudentListAdapter.WordViewHolder>(WordsComparator()){
 
     class WordsComparator: DiffUtil.ItemCallback<Student>() {
         override fun areItemsTheSame(oldItem: Student, newItem: Student): Boolean {
@@ -34,7 +35,7 @@ class StudentListAdapter : ListAdapter<Student, StudentListAdapter.WordViewHolde
     }
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        getItem(position)?.let { holder.bind(it) }
     }
 
 }

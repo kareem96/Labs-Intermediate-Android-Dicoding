@@ -1,6 +1,7 @@
 package com.kareemdev.mystudentdata
 
 import androidx.lifecycle.*
+import androidx.paging.PagedList
 import com.kareemdev.mystudentdata.database.Student
 import com.kareemdev.mystudentdata.database.StudentAndUniversity
 import com.kareemdev.mystudentdata.database.StudentWithCourse
@@ -21,7 +22,7 @@ class MainViewModel(private val studentRepository: StudentRepository) : ViewMode
     }
 
     /*fun getAllStudent(): LiveData<List<Student>> = studentRepository.getAllStudent()*/
-    fun getAllStudent(): LiveData<List<Student>> = _sort.switchMap {
+    fun getAllStudent(): LiveData<PagedList<Student>> = _sort.switchMap {
         studentRepository.getAllStudent(it)
     }
 
