@@ -19,7 +19,6 @@ import com.udinus.storyapp.databinding.FragmentRegisterBinding
 import com.udinus.storyapp.utils.animateVisibility
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 
@@ -38,7 +37,7 @@ class RegisterFragment : Fragment() {
     private var registerJob: Job = Job()
     private val viewModelRegister: RegisterViewModel by viewModels()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root

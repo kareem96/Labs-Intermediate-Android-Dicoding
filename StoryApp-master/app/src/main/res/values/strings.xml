@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StoryApp</string>
+    <string name="app_name" translatable="false">StoryApp</string>
     <string name="new_to_story">Dont have account?</string>
     <string name="register">Register</string>
     <string name="already_have_an_account">Already have an account?</string>

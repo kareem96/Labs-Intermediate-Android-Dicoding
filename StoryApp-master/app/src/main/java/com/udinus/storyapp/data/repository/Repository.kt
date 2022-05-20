@@ -12,7 +12,6 @@ import com.udinus.storyapp.data.remote.api.ApiService
 import com.udinus.storyapp.data.remote.response.LoginResponse
 import com.udinus.storyapp.data.remote.response.ResponseRegister
 import com.udinus.storyapp.data.remote.response.ResponseUpload
-import com.udinus.storyapp.data.remote.response.StoryResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -90,16 +89,6 @@ class Repository @Inject constructor(
         }
     }
 
-
-    fun getStoriesLocation(token: String): Flow<Result<StoryResponse>> = flow {
-        try {
-            val userToken = "Bearer $token"
-            val response = apiService.getAllStories(userToken, null, size = 100, location = 1)
-            emit(Result.success(response))
-        }catch (exception: Exception){
-            emit(Result.failure(exception))
-        }
-    }
 
 
     fun getToken(): Flow<String?> = appPreferences.getAuthToken()
