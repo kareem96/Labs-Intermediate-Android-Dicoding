@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Story App</string>
+
+    <!-- Login Page -->
+    <string name="login_image">Ilustrasi dari proses masuk</string>
+    <string name="login_header">Masuk ke akun anda</string>
+    <string name="sign_in">Masuk</string>
+    <string name="register_message">Belum punya akun?</string>
+    <string name="register_here">Daftar disini</string>
+
+    <!-- Register Page -->
+    <string name="register_image">Ilustrasi dari proses daftar</string>
+    <string name="register_header">Buat akun baru</string>
+    <string name="register">Daftar</string>
+    <string name="login_message">Sudah punya akun?</string>
+    <string name="login_here">Masuk disini</string>
+
+    <!-- Login and Register -->
+    <string name="email">Alamat surel</string>
+    <string name="name">Nama</string>
+    <string name="password">Kata sandi</string>
+    <string name="invalid_email">Alamat surel tidak valid</string>
+    <string name="invalid_password">Kata sandi minimal memiliki 6 karakter</string>
+
+    <!-- Main Page -->
+    <string name="setting">pengaturan</string>
+    <string name="logout">Keluar</string>
+    <string name="logout_confirmation">Apakah anda yakin ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="cancel">Batal</string>
+
+    <!-- Add Page -->
+    <string name="new_story">Cerita Baru</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah</string>
+
+    <!-- Message For User and Logcat -->
+    <string name="failed_register">Gagal daftar dengan error:</string>
+    <string name="failed_login">Gagal masuk dengan error:</string>
+    <string name="wrong_authentication">Alamat surel atau kata sandi salah</string>
+    <string name="invalid_authentication">Alamat surel tidak valid atau alamat surel sudah didaftarkan sebelumnya</string>
+    <string name="register_success_message">Berhasil mendaftarkan akun baru</string>
+    <string name="register_failed">Registrasi gagal</string>
+    <string name="register_success">Registrasi berhasil</string>
+    <string name="login_failed">Masuk gagal</string>
+    <string name="ok">OK</string>
+    <string name="info">Info</string>
+    <string name="empty_story">Tidak ada cerita</string>
+    <string name="data_error">Gagal memuat data</string>
+    <string name="data_error_message">Data cerita gagal diambil dengan error error:</string>
+    <string name="camera_failed">Gagal menampilkan kamera</string>
+    <string name="take_picture_failed">Gagal mengambil gambar</string>
+    <string name="permission_failed">Tidak mendapatkan permission</string>
+    <string name="choose_image">Pilih gambar</string>
+    <string name="upload_image_empty">Silakan masukkan berkas gambar ataupun deskripsi terlebih dahulu</string>
+    <string name="camera_success_title">Unggah Berhasil</string>
+    <string name="camera_failed_title">Kamera gagal</string>
+    <string name="camera_failed_value">Kamera gagal dengan error:</string>
+</resources>

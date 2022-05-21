@@ -5,11 +5,13 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/bg_inactive.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/bg_valid.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_create.xml" value="0.28541666666666665" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.28541666666666665" />
         <entry key="app/src/main/res/layout/item_content.xml" value="0.28541666666666665" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.2" />
       </map>
     </option>
   </component>
