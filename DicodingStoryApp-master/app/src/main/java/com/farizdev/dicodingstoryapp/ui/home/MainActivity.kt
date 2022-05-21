@@ -11,7 +11,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.farizdev.dicodingstoryapp.R
+import com.farizdev.dicodingstoryapp.ViewModelFactory
+import com.farizdev.dicodingstoryapp.adapter.StoryListAdapter
+import com.farizdev.dicodingstoryapp.data.local.UserPreferences
 import com.farizdev.dicodingstoryapp.databinding.ActivityMainBinding
 import com.farizdev.dicodingstoryapp.ui.create.CreateActivity
 import com.farizdev.dicodingstoryapp.ui.login.LoginActivity
@@ -36,6 +41,63 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
         supportActionBar?.title = resources.getString(R.string.app_name)
+
+        binding.rvStories.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(this@MainActivity)
+        }
+
+        viewModelFactory()
+
+        getUser()
+
+
+        getDialog()
+
+        viewModel.loading.observe(this) {
+            stateLoading(it)
+        }
+
+        binding.fabAdd.setOnClickListener(this)
+    }
+
+    private fun getUser() {
+        viewModel.getUser().observe(this){
+            viewModel.getStories(it.token)
+        }
+    }
+
+    private fun getDialog() {
+        viewModel.errorMessage.observe(this) {
+            if (it != "") {
+                AlertDialog.Builder(this).apply {
+                    setTitle(R.string.data_error)
+                    setMessage(R.string.data_error_message.toString() + " $it")
+                    setPositiveButton(R.string.ok) { _, _ -> }
+                    create()
+                    show()
+                }
+            }
+        }
+
+        viewModel.stories.observe(this) {
+            if (it.size == 0) {
+                AlertDialog.Builder(this).apply {
+                    setTitle(R.string.info)
+                    setMessage(R.string.empty_story)
+                    setPositiveButton(R.string.ok) { _, _ -> }
+                    create()
+                    show()
+                }
+            }
+
+            binding.rvStories.adapter = StoryListAdapter(it)
+        }
+    }
+
+    private fun viewModelFactory() {
+        viewModel = ViewModelProvider(this@MainActivity, ViewModelFactory.getInstance(
+            UserPreferences.getInstance(dataStore)))[MainViewModel::class.java]
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
