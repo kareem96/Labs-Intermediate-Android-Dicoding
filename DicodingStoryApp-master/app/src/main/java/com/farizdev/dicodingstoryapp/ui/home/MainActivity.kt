@@ -1,7 +1,8 @@
-package com.farizdev.dicodingstoryapp
+package com.farizdev.dicodingstoryapp.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.farizdev.dicodingstoryapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

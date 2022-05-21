@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">DicodingStoryApp</string>
+    <string name="login_image">Illustration of login process</string>
+    <string name="login_header">Login to your account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register_message">Don\'t have an account?</string>
+    <string name="register_here">Register here</string>
+
+    <string name="register_image">Illustration of register process</string>
+    <string name="register_header">Create a new account</string>
+    <string name="register">Register</string>
+    <string name="login_message">Already have an account?</string>
+    <string name="login_here">Login here</string>
+
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Email doesn\'t valid</string>
+    <string name="invalid_password">Minimum 6 characters password required</string>
+
+    <string name="setting">setting</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirmation">Are you sure want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="new_story">New Story</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="description">Description</string>
+    <string name="upload">Upload</string>
+
+    <string name="failed_register">Register failed with error:</string>
+    <string name="failed_login">Login failed with error:</string>
+    <string name="wrong_authentication">Wrong email or password</string>
+    <string name="invalid_authentication">Invalid email address or address already registered before</string>
+    <string name="register_success_message">Successfully register new account</string>
+    <string name="register_failed">Register failed</string>
+    <string name="register_success">Register success</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="ok">OK</string>
+    <string name="info">Info</string>
+    <string name="empty_story">There is no story</string>
+    <string name="data_error">Fetching failed</string>
+    <string name="data_error_message">Fetching story failed with error: </string>
+    <string name="camera_failed">Failed to show camera</string>
+    <string name="take_picture_failed">Failed to take picture</string>
+    <string name="permission_failed">Permission access failed</string>
+    <string name="choose_image">Choose image</string>
+    <string name="upload_image_empty">Please insert the image or description</string>
+    <string name="camera_success_title">Success Upload</string>
+    <string name="camera_failed_title">Camera Failed</string>
+    <string name="camera_failed_value">Camera failed with error:</string>
 </resources>

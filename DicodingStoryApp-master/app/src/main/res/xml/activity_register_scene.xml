@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation1"
+        motion:constraintSetStart="@id/start"
+        motion:duration="750"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation2"
+        motion:constraintSetStart="@id/animation1"
+        motion:duration="750"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation3"
+        motion:constraintSetStart="@id/animation2"
+        motion:duration="500"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation4"
+        motion:constraintSetStart="@id/animation3"
+        motion:duration="500"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation5"
+        motion:constraintSetStart="@id/animation4"
+        motion:duration="500"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation6"
+        motion:constraintSetStart="@id/animation5"
+        motion:duration="750"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/animation7"
+        motion:constraintSetStart="@id/animation6"
+        motion:duration="500"
+        motion:autoTransition="animateToEnd">
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/iv_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/tv_register_header"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_register"
+            motion:layout_constraintEnd_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_name"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_register_header"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/custom_email"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_name"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation1">
+        <Constraint
+            android:id="@+id/iv_register"
+            android:alpha="1"
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/tv_register_header"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_register"
+            motion:layout_constraintEnd_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_name"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_register_header"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/custom_email"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_name"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation2">
+        <Constraint
+            android:id="@+id/tv_register_header"
+            android:alpha="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:pathMotionArc="none"
+            motion:transitionEasing="decelerate"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_name"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_register_header"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/custom_email"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_name"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation3">
+        <Constraint
+            android:id="@+id/custom_name"
+            android:alpha="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_register_header"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/custom_email"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_name"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation4">
+        <Constraint
+            android:id="@+id/custom_email"
+            android:alpha="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_name"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation5">
+        <Constraint
+            android:id="@+id/custom_password"
+            android:alpha="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_email"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation6">
+        <Constraint
+            android:id="@+id/btn_register"
+            android:alpha="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            motion:layout_constraintTop_toBottomOf="@+id/custom_password"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/animation7">
+        <Constraint
+            android:id="@+id/linear_layout"
+            android:alpha="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_register"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+</MotionScene>
