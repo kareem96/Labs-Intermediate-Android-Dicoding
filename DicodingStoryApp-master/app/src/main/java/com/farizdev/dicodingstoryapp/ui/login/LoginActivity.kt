@@ -134,7 +134,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun loginValidation(emailValidation: Boolean, passwordValidation: Boolean) {
         binding.btnLogin.isEnabled = emailValidation && passwordValidation
-        /*binding.btnLogin.changeStatus(emailValidation && passwordValidation)*/
     }
 
     private fun passwordValidation() {

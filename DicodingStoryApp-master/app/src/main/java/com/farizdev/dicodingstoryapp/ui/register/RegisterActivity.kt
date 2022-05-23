@@ -117,7 +117,6 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun loginValidation(emailValidation: Boolean, passwordValidation: Boolean) {
         binding.btnRegister.isEnabled = emailValidation && passwordValidation
-        /*binding.btnRegister.changeStatus(emailValidation && passwordValidation)*/
     }
 
     private fun setEmailValidation() {

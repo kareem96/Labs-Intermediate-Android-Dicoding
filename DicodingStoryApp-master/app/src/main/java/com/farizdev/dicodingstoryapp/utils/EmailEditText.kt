@@ -5,8 +5,13 @@ import android.graphics.Canvas
 import android.graphics.Rect
 import android.graphics.drawable.Drawable
 import android.text.Editable
+import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.AttributeSet
+import android.util.Patterns
+import android.view.MotionEvent
+import android.view.View
+import androidx.annotation.Nullable
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
@@ -82,7 +87,6 @@ class EmailEditText : AppCompatEditText {
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         hint = resources.getString(R.string.email)
-        /*typeface = ResourcesCompat.getFont(context, R.font.roboto_medium)*/
     }
 
     override fun onFocusChanged(focused: Boolean, direction: Int, previouslyFocusedRect: Rect?) {

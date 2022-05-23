@@ -86,7 +86,6 @@ class PasswordEditText : AppCompatEditText {
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         hint = resources.getString(R.string.password)
-        /*typeface = ResourcesCompat.getFont(context, R.font.roboto_medium)*/
     }
 
     override fun onFocusChanged(focused: Boolean, direction: Int, previouslyFocusedRect: Rect?) {
