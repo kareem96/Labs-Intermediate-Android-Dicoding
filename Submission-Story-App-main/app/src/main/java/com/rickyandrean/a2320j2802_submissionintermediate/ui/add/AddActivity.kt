@@ -134,9 +134,7 @@ class AddActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private val launcherIntentCameraX = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) {
+    private val launcherIntentCameraX = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (it.resultCode == CAMERA_X_RESULT) {
             val myFile = it.data?.getSerializableExtra("picture") as File
             val result = BitmapFactory.decodeFile(myFile.path)
@@ -147,9 +145,7 @@ class AddActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private val launcherIntentGallery = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) {
+    private val launcherIntentGallery = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (it.resultCode == RESULT_OK) {
             val selectedImg: Uri = it.data?.data as Uri
             val myFile = uriToFile(selectedImg, this@AddActivity)

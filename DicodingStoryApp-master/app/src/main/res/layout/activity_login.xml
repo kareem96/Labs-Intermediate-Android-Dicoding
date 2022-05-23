@@ -11,15 +11,16 @@
     <ImageView
         android:id="@+id/iv_login"
         android:layout_width="0dp"
-        android:layout_height="270dp"
+        android:layout_height="200dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
+        android:contentDescription="@string/register_image"
         android:scaleType="fitCenter"
+        android:src="@drawable/dicodinglogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/login_image" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.farizdev.dicodingstoryapp.utils.EmailEditText
         android:id="@+id/custom_email"

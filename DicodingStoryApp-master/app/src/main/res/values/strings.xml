@@ -5,31 +5,26 @@
     <string name="sign_in">Sign In</string>
     <string name="register_message">Don\'t have an account?</string>
     <string name="register_here">Register here</string>
-
     <string name="register_image">Illustration of register process</string>
     <string name="register_header">Create a new account</string>
     <string name="register">Register</string>
     <string name="login_message">Already have an account?</string>
     <string name="login_here">Login here</string>
-
     <string name="email">Email</string>
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="invalid_email">Email doesn\'t valid</string>
     <string name="invalid_password">Minimum 6 characters password required</string>
-
     <string name="setting">setting</string>
     <string name="logout">Logout</string>
     <string name="logout_confirmation">Are you sure want to logout?</string>
     <string name="yes">Yes</string>
     <string name="cancel">Cancel</string>
-
     <string name="new_story">New Story</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
     <string name="description">Description</string>
     <string name="upload">Upload</string>
-
     <string name="failed_register">Register failed with error:</string>
     <string name="failed_login">Login failed with error:</string>
     <string name="wrong_authentication">Wrong email or password</string>
