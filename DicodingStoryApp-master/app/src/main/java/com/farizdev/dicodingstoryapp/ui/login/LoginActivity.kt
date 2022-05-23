@@ -123,7 +123,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         binding.btnLogin.setOnClickListener(this)
-        binding.tvRegisterHyperlink.setOnClickListener(this)
+        binding.toRegister.setOnClickListener(this)
 
     }
 
@@ -163,7 +163,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     binding.customPassword.text.toString()
                 )
             }
-            R.id.tv_register_hyperlink -> {
+            R.id.to_register -> {
                 startActivity(Intent(this, RegisterActivity::class.java))
             }
         }

@@ -8,7 +8,19 @@
     tools:context=".ui.login.LoginActivity"
     app:layoutDescription="@xml/activity_login_scene">
 
-    z
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/dicodinglogo"
+        android:contentDescription="@string/login_image" />
 
     <com.farizdev.dicodingstoryapp.utils.EmailEditText
         android:id="@+id/custom_email"
@@ -103,7 +115,7 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tv_register_hyperlink"
+            android:id="@+id/to_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"

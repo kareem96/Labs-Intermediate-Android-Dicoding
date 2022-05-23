@@ -1,5 +1,6 @@
 package com.farizdev.dicodingstoryapp.ui.register
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import com.farizdev.dicodingstoryapp.R
 import com.farizdev.dicodingstoryapp.databinding.ActivityRegisterBinding
+import com.farizdev.dicodingstoryapp.ui.login.LoginActivity
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityRegisterBinding
@@ -75,7 +77,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         listener()
 
         binding.btnRegister.setOnClickListener(this)
-        binding.tvLoginHyperlink.setOnClickListener(this)
+        binding.toLogin.setOnClickListener(this)
 
     }
 
@@ -149,7 +151,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                     binding.customPassword.text.toString()
                 )
             }
-            R.id.tv_login_hyperlink -> {
+            R.id.to_login -> {
                 finish()
             }
         }
