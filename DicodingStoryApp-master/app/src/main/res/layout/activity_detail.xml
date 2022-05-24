@@ -7,13 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail.DetailActivity">
 
-
-
     <ImageView
         android:id="@+id/iv_detail_story"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="fitCenter"
         android:transitionName="photo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

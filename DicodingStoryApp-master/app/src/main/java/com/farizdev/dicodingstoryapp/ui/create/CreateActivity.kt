@@ -65,6 +65,8 @@ class CreateActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
         supportActionBar?.title = resources.getString(R.string.new_story)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         if(!allPermissionsGranted()){
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
@@ -99,7 +101,6 @@ class CreateActivity : AppCompatActivity(), View.OnClickListener {
         viewModel = ViewModelProvider(this@CreateActivity, ViewModelFactory.getInstance(
             UserPreferences.getInstance(dataStore)))[CreateViewModel::class.java]
     }
-
 
     companion object {
         const val CAMERA_X_RESULT = 200
@@ -199,6 +200,11 @@ class CreateActivity : AppCompatActivity(), View.OnClickListener {
             create()
             show()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 
 }
