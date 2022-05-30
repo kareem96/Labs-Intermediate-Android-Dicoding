@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import com.farizdev.dicodingstoryapp.R
 
-class NameEditText : AppCompatEditText {
+class  NameEditText : AppCompatEditText {
     private lateinit var inactiveBackground: Drawable
     private lateinit var activeBackground: Drawable
     private lateinit var nameImage: Drawable
