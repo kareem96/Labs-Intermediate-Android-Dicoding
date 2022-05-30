@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498326710621",
+    "firebase_url": "https://myfirebasechat-f8b3b-default-rtdb.firebaseio.com",
+    "project_id": "myfirebasechat-f8b3b",
+    "storage_bucket": "myfirebasechat-f8b3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498326710621:android:b9f5c78b6be0dc626160b4",
+        "android_client_info": {
+          "package_name": "com.kareemdev.myfirebasechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498326710621-m4ig3ocj7c37c0jncn13h3ul419t53jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kareemdev.myfirebasechat",
+            "certificate_hash": "e7165b1b6b7c543329ba670dd3fa3a38d8a7fcc6"
+          }
+        },
+        {
+          "client_id": "498326710621-p23l1lkr7lu40aq2qiamg4mtmcef6pv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0mjhJKjQeRReOBHc-5h7IhtKdj13Rl1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498326710621-p23l1lkr7lu40aq2qiamg4mtmcef6pv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
