@@ -6,11 +6,14 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.kareemdev.myfirebasechat.adapter.FirebaseMessageAdapter
 import com.kareemdev.myfirebasechat.databinding.ActivityMainBinding
 import com.kareemdev.myfirebasechat.model.Message
 import java.util.*
@@ -19,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var db:FirebaseDatabase
+    private lateinit var adapter: FirebaseMessageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +56,27 @@ class MainActivity : AppCompatActivity() {
             }
             binding.messageEditText.setText("")
         }
+
+
+        val manager = LinearLayoutManager(this)
+        manager.stackFromEnd = true
+        binding.messageRecyclerView.layoutManager = manager
+
+        val options = FirebaseRecyclerOptions.Builder<Message>()
+            .setQuery(messageRef, Message::class.java)
+            .build()
+        adapter = FirebaseMessageAdapter(options, firebaseUser.displayName)
+        binding.messageRecyclerView.adapter = adapter
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adapter.startListening()
+    }
+
+    override fun onPause() {
+        adapter.stopListening()
+        super.onPause()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
