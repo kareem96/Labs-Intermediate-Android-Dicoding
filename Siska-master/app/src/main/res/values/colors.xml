@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#f1f5f0</color>
+    <color name="kalindo">#006633</color>
+    <color name="kalindo2">#99cc33</color>
+    <color name="blue_mkt">#6F9CD3</color>
+    <color name="orange_mkt">#FB8C2E</color>
+    <color name="orange_lottie">#ec912d</color>
+    <color name="gray">#5e5e5e</color>
+    <color name="grey">#dedede</color>
+    <color name="nav_selected">#006633</color>
+    <color name="nav_unselected">#999999</color>
+    <color name="prospect_new">#4795ee</color>
+    <color name="prospect_process">#d671c9</color>
+    <color name="prospect_closing">#77B341</color>
+    <color name="prospect_expired">#e98c22</color>
+    <color name="prospect_notInterested">#EF5350</color>
+</resources>

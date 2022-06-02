@@ -60,6 +60,7 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
             openGallery()
         }
         binding.btnPost.setOnClickListener(this)
+
         storyViewModel.storyPostState.observe(viewLifecycleOwner) {
             when (it) {
                 is StateHandler.Loading -> {
@@ -153,6 +154,7 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
 
     private lateinit var photoURI: Uri
     private lateinit var currentPhotoPath: String
+
     private val launcherIntentCamera = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             if (it.resultCode == Activity.RESULT_OK) {
                 photo = File(currentPhotoPath)
@@ -164,8 +166,6 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
                         ContextCompat.getDrawable(requireContext(), R.drawable.rounded_outline)
                     binding.storyImageView.clipToOutline = true
                 }
-
-
             } else {
                 CommonFunction.showSnackBar(
                     binding.root,
@@ -175,7 +175,6 @@ class AddStoryFragment : Fragment(), View.OnClickListener {
                 )
             }
         }
-
     private val launcherIntentGallery = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val selectedImg: Uri = result.data?.data as Uri

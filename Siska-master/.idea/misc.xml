@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/dialog_loader.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_home_new_taste.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_payment.xml" value="0.28306159420289856" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_payment_success.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_signup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/fragment_signup_address.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Kotlin/FoodMarket download/bwafmkotlin/app/src/main/res/layout/item_home_vertical.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable-v24/border.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable-v24/shape_rectangle_solid_50.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/bg_spinner.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.15416666666666667" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_baseline_phone_50.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_booking_unit.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_hot.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_logo_apps.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/ic_my_prospect.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_296619.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_8d92a3.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_c1272d.xml" value="0.22135416666666666" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_d9435e.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_ffc700.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_8_fff.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_radius_20.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_solid.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_solid_8.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/drawable/shape_rectangle_solid_dissable.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/font/poppins.xml" value="0.396875" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/activity_auth.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/dialog_loader.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/dropdown_item.xml" value="0.20572916666666666" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_account.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_all_aktif.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_all_arsip.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_all_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_all_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_detail.xml" value="0.25" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_dev_aktif.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_dev_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_dev_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_history.xml" value="0.20572916666666666" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_input.xml" value="0.22" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_my_aktif.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_my_arsip.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_my_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_my_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_signin.xml" value="0.12" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_signup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/fragment_signup_success.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/item_history_vertical.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/item_leads_vertical.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/layout/layout_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Makutapro2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable-v24/bg_pp.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable-v24/outline_edit_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable-v24/shape_rectangle_solid_50.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable-v24/shape_solid.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/bg_iv.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/bg_spinner.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_arrow_right_8d92a3.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_email_32.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_expand_less_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_hot.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_baseline_info_danger.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_hot.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_my_booking.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_setting_profile_black_32.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/ic_share_solid.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/shape_home.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/shape_rectangle_20_fff.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/shape_rectangle_radius_8.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/shape_rectangle_solid.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/drawable/shape_rectangle_solid_8.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_hot_prospect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_my_prospect.xml" value="0.3560606060606061" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_new_prospect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_profile_picture.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_setting.xml" value="0.13636363636363635" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/activity_success.xml" value="0.16510416666666666" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/dialog_loader.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/dialog_logout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_account.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_all_aktif.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_all_arsip.xml" value="0.18" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_all_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_all_leads.xml" value="0.16510416666666666" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_change_pass.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_detail.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_dev_aktif.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_dev_arsip.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_dev_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_dev_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_history.xml" value="0.16510416666666666" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_hot_prospect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_input.xml" value="0.16510416666666666" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_leads.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_my_aktif.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_my_arsip.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_my_hot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_my_leads.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_my_prospect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_new_prospect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_profile_picture.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/fragment_signin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/input_success.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/item_history_vertical.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/item_leads_vertical.xml" value="0.1" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/layout_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/layout/notification.xml" value="0.33" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/mipmap-anydpi-v26/ic_launcher_siska.xml" value="0.3828125" />
+        <entry key="..\:/Kerjaan/DESI/Siska/app/src/main/res/mipmap-anydpi-v26/ic_launcher_siska_round.xml" value="0.3828125" />
+        <entry key="app/src/main/res/layout/activity_my_prospect.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

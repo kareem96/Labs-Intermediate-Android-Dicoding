@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.leads.LeadsFragment">
+
+    <include layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorFullWidth="false"
+                android:layout_marginHorizontal="50dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/kalindo"
+                app:tabIndicatorColor="@color/kalindo2"
+                app:tabTextAppearance="@style/Tab"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

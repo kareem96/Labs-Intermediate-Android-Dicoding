@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "405792826730",
+    "project_id": "siska-ead87",
+    "storage_bucket": "siska-ead87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405792826730:android:f5c76d44da36308ed87113",
+        "android_client_info": {
+          "package_name": "com.crm.siska"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405792826730-lr1fpehufqq26uaq24elek6ihppr4g23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuxVRyP6Vsswzh5vsYyfuRadqBhMOSPPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405792826730-lr1fpehufqq26uaq24elek6ihppr4g23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405792826730:android:aa3aa58ee08c0341d87113",
+        "android_client_info": {
+          "package_name": "com.crm.siska.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405792826730-lr1fpehufqq26uaq24elek6ihppr4g23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuxVRyP6Vsswzh5vsYyfuRadqBhMOSPPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405792826730-lr1fpehufqq26uaq24elek6ihppr4g23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

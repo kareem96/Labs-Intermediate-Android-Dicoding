@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.signin.SigninFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_siska2"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginHorizontal="20dp"
+        app:cardBackgroundColor="@color/kalindo"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+
+        <TextView
+            style="@style/TextView.MontserratMedium14fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Category"></TextView>
+
+        <TextView
+            style="@style/TextView.MontserratMedium14fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="78dp"
+            android:text="Username"></TextView>
+
+        <TextView
+            style="@style/TextView.MontserratMedium14fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="131dp"
+            android:text="Password"></TextView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignin"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="184dp"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+        <EditText
+            style="@style/EditText.MontserratNormal14spgrayDissable"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
+            android:cursorVisible="true"
+            android:editable="false"
+            android:hint="Sales"
+            android:paddingHorizontal="12dp"
+            android:textAlignment="gravity"
+            android:textColorHint="@color/gray"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/EditText.MontserratNormal14spgray"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:paddingHorizontal="12dp"
+            android:textAlignment="gravity"
+            android:textColorHint="@color/gray"></EditText>
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditText.MontserratNormal14spgray"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            android:paddingHorizontal="12dp"
+            android:textAlignment="gravity"
+            android:textColorHint="@color/gray"></EditText>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

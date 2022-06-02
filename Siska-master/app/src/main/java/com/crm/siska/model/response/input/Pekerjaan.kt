@@ -1,0 +1,14 @@
+package com.crm.siska.model.response.input
+
+
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
+data class Pekerjaan(
+    @Expose
+    @SerializedName("PekerjaanID")
+    val pekerjaanID: Int,
+    @Expose
+    @SerializedName("TipePekerjaan")
+    val tipePekerjaan: String
+)

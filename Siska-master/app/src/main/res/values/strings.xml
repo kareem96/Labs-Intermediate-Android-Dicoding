@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Siska</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_leads">Leads</string>
+    <string name="title_input">Input</string>
+    <string name="title_history">History</string>
+    <string name="title_account">Account</string>
+    <string-array name="language">
+        <item>Indonesia</item>
+        <item>Japanase</item>
+        <item>Rusia</item>
+    </string-array>
+</resources>

@@ -1,0 +1,256 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BarMakutapro" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue_mkt</item>
+    </style>
+
+    <style name="AppTheme.noActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="TextView"/>
+
+
+    <style name="TextView.MontserratBold44fff">
+        <item name="android:text">Makutapro</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">44sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.MontserratBold24fff">
+        <item name="android:text">Makutapro</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.MontserratMedium12fff">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.MontserratMedium14fff">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.MontserratMedium14blue_mkt">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/blue_mkt</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.MontserratMedium16fff">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.MontserratMedium18fff">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.MontserratMedium14020202">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">#020202</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal32sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal16sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal16spfff">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal22sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal20sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal18sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal14sp202020">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal14sp1ABC9C">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#1ABC9C</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal14sp8D92A3">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal13sp8D92A3">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal10sp8D92A3">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal10spD9435E">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#D9435E</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal14sp020202">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#020202</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextView.PoppinsNormal14spfff">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditText"/>
+
+    <style name="EditText.MontserratNormal14spgrayDissable">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_solid_dissable</item>
+    </style>
+
+    <style name="EditText.MontserratNormal14spgray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_solid</item>
+    </style>
+
+    <style name="EditText.MontserratNormal14sp8D92A3">
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditText.MontserratNormal14sp020202">
+        <item name="android:textColor">#020202</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditText.PoppinsNormal14sp8D92A3">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/kalindo</item>
+    </style>
+
+    <style name="EditTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/grey</item>
+        <item name="boxStrokeWidth">0.1dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+    </style>
+
+    <style name="Button"/>
+
+    <style name="Button.Primary">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_radius_8</item>
+    </style>
+
+    <style name="Button.Secondary">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_8_8d92a3</item>
+    </style>
+
+    <style name="Button.Cancelled">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_8_d9435e</item>
+    </style>
+
+    <style name="Button.SubmitDataKonsumen">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_8_d9435e</item>
+    </style>
+
+    <style name="Button.SubmitClosing">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_8_296619</item>
+    </style>
+
+    <style name="Button.SubmitNotInterested">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_rectangle_8_c1272d</item>
+    </style>
+
+    <style name="Tab">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="colorControlNormal">#ECECEC</item>
+        <item name="colorControlActivated">#FFC700</item>
+    </style>
+
+</resources>

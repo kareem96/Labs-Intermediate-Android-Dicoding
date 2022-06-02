@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.input.InputFragment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="24dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Prospect"
+                style="@style/TextView.PoppinsNormal14sp020202"/>
+            <EditText
+                android:id="@+id/etNamaProspect"
+                style="@style/EditText.MontserratNormal14sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_solid_8"
+                android:hint="Input nama prospect ..."
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email Address"
+                style="@style/TextView.PoppinsNormal14sp020202"/>
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/EditText.MontserratNormal14sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_solid_8"
+                android:inputType="textEmailAddress"
+                android:hint="Input email ..."
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="HP"
+                style="@style/TextView.PoppinsNormal14sp020202"/>
+            <EditText
+                android:id="@+id/etHp"
+                style="@style/EditText.MontserratNormal14sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/shape_rectangle_solid_8"
+                android:hint="Input nomor hp"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pesan"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pesan" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                style="@style/EditText.MontserratNormal14sp020202"
+                android:background="@drawable/shape_rectangle_solid_8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Tulis pesan ..."
+                android:padding="8dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:text="Jenis Kelamin"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RadioGroup
+                android:id="@+id/rbGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_above="@+id/etMessage">
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8D92A3"
+                    android:text="Perempuan" />
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8D92A3"
+                    android:text="Laki-laki" />
+            </RadioGroup>
+
+            <TextView
+                android:text="Usia"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spUsia"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+
+            <TextView
+                android:text="Pekerjaan"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spPekerjaan"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+            <TextView
+                android:text="Penghasilan"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spPenghasilan"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+            <TextView
+                android:text="Unit Type"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spUnitType"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+            <TextView
+                android:text="Domisili"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spProvinceDomisili"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+            <Spinner
+                android:id="@+id/spCityDomisili"
+                android:background="@drawable/bg_spinner"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+            <TextView
+                android:text="Tempat Kerja"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spProvince"
+                android:background="@drawable/bg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+            <Spinner
+                android:id="@+id/spCity"
+                android:background="@drawable/bg_spinner"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:dropDownVerticalOffset="40dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="44dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

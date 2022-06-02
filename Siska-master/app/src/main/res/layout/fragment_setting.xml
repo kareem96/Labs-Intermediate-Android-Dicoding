@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fragmentSetting"
+    tools:context=".ui.setting.SettingFragment">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/layout_toolbar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/lock" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Old Password"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        style="@style/TextView.PoppinsNormal14sp020202"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Password lama"
+        app:helperText="Required"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOldPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            style="@style/EditText.MontserratNormal14sp020202"
+            android:ems="15"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        style="@style/TextView.PoppinsNormal14sp020202"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Password baru"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:helperText="Required"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            style="@style/EditText.MontserratNormal14sp020202"
+            android:ems="15"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Password Confirmation"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        style="@style/TextView.PoppinsNormal14sp020202"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input ulang Password baru"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNewPassConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            style="@style/EditText.MontserratNormal14sp020202"
+            android:ems="15"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+</LinearLayout>

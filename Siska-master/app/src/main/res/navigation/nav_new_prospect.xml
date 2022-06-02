@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentNewProspect"
+    android:id="@+id/nav_new_prospect">
+
+    <fragment android:id="@+id/fragmentNewProspect"
+        android:name="com.crm.siska.ui.home.newprospect.NewProspectFragment"
+        tools:layout= "@layout/fragment_new_prospect">
+    </fragment>
+
+</navigation>

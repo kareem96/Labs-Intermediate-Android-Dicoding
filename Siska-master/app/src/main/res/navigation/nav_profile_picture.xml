@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentPP"
+    android:id="@+id/nav_profile_picture">
+
+    <fragment android:id="@+id/fragmentPP"
+        android:name="com.crm.siska.ui.profile.ProfilePictureFragment"
+        tools:layout= "@layout/fragment_profile_picture">
+
+<!--        <argument android:name="data"-->
+<!--            app:argType="com.crm.siska.model.response.home.HomeResponse"-->
+<!--            app:nullable="true"/>-->
+
+    </fragment>
+
+</navigation>
